@@ -1,0 +1,6 @@
+- Use Apache Pulsar
+ - Persistent publish/sub 
+ - Scaling
+ - Easily Deployed on k8s
+ - https://pulsar.apache.org/
+ - 
