@@ -1,0 +1,36 @@
+# IOT With Apache Spark and Bahir 
+
+## MQTT
+
+A messaging protocol for sending metrics. 
+
+Environment: https://github.com/lresende/bahir-iot-demo
+
+## Apache Bahir
+
+Connectors for multiple streaming platforms 
+
+https://bahir.apache.org/
+
+## Patterns
+
+ - Remote control
+ - Security analysis 
+ - Edge Analytics
+ - Historical Data Analysis
+ - Distributed Platforms
+
+## MQTT - M2M/iot Connectivity Protocol
+
+  - Pub sub 
+  - Lots of clients 
+  - Small client overhead
+
+## MQTT
+
+ - At most once 
+ - Talks to a broker
+
+## Simulator (see github for demo)
+
+
