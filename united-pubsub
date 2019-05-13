@@ -3,4 +3,39 @@
  - Scaling
  - Easily Deployed on k8s
  - https://pulsar.apache.org/
- - 
+ - Apache Bookkeeper 
+   - Log storage (think kafka)
+ - Has replication capiabilities
+
+
+## Use cases 
+
+ - SWIM  System wide info management 
+ - Realtime message feed 
+   - Events on raodports, traffic, airport operations
+ - Publishers - Operations can post to the FAA
+ - Consumers - goes to airlines 
+
+
+## Apache Kafka Vs Pulsar 
+
+ - Distributed IO- claims that pulsar has faster io 
+ - Allows for you to mix and match reading/writting with pub sub 
+ - Kafak doesn't allow for you to scale down 
+ - Pulsar scales better? (Need more info) 
+ - Pulsar built from the transaction model, kafka not so good
+
+Questions 
+--------- 
+
+
+  1. What kind of problems has this been used to solve successfully?  
+    - Answered
+  2. Delta has the capability to mitigate missed connections by auto-rebooking, is that something that  the streaming platform can handle? 
+    - Dependent on the FAA's behavior
+  3. How easy is it for the data stored in Bookkeeper to be queried by data science tools (tablu, etc)
+    - Not sure 
+
+
+Tours of the network operations center - That woudl be cool
+
