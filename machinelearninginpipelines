@@ -4,13 +4,60 @@ https://deanwampler.github.io/polyglotprogramming/papers/ExecutiveBriefing-WhatI
 
 ## Batch vs Streaming
 
+  - Real time updates 
 
 ## Data science vs data engineering
 
+  - Seperated tool sets between data eng vs science
+  - Data scientists
+   - Comfortable with uncertainty
+   - Used to statistics
+   - Less process oriented
+     - Iterative , experimental
+  - Data Engineers
+   - Uncomfortable with uncertainty
+   - Process oriented 
+     - "Agile"
+     - Doesn't mention data
+
 ## Where to use AI First
 
+  - Hybrid systems - enhance existing analytics with ML/AI Models
+  - Show we integrate legacy expert systems and how?
+  
+  
 ## Serving models in production
 
+  - Rough 
+  - Kube flow
+  - Challenges 
+    - https://www.kubeflow.org/
+    - Integration is a bit difficult
+    - Concerns:
+      - Productivity
+      - Devops challenges
+  - Needs
+    - VC for modesl and code
+    - Automated builds, tests, qc, and artifact delievery
+    - Launch confurations: "dark launches", A/B and other testing scenarios
+    
+  
 ## Complete systems for ml/ai
 
 ## Pragmatic challenges 
+
+## Reference later 
+
+ - Automatic Rule learning?
+ - Embedded rules to influence learning
+   - Pretrain the model 
+   
+## Questions?
+
+ - REPL
+ - Testing 
+ - How do you store the models?
+ - Seperation of data science vs engineering and where does that merge?
+ - How do you version the models that you have for new updates?
+ - How do you test/debug models in production
+ - Integrate legact expert systems and how: Relearning rules?
