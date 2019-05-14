@@ -1,0 +1,73 @@
+# Dyanmic Streaming Pattern
+
+## Problems 
+
+  - Not sure
+
+## Types of additional data
+
+  - Can be static or dynamic
+  - Dyanmic data (data changes outside of the stream processing)
+
+## Classic
+
+  - RPC Based service innvocation 
+  - Poor performance 
+  - No batching 
+  - Advantage: Easy auditing
+  - Disadvantage: service going down
+
+## Dyanmically Controlled Streams 
+
+
+## Log Centric Execution
+
+  - Looks like esb
+  - Whiteboard apttern
+  - Adding new producers and consumers is easy and doesn't require changes
+  - Consuming/producing is migrated
+  - "Simplified debugging"
+  
+  
+## Implementing Dynamically Controlled Stream using Akka Streams
+
+  
+### Backpressure in Akka Streams 
+
+  - Use of the Queue 
+  - Implementation:  
+
+## Akka Streams
+
+  - Kafka is the backing for the persistend unprocessed queue
+
+## Implementing Dyanmically COntrolled Stream Using kafka Streams
+ 
+## In Flink
+
+ - Run on thousands of nodes 
+ - Checkpoitning 
+ - Low level join
+ - Supports key based joins 
+ - Flink manages your partitions internally rather than kafka partitions
+
+## Spark
+
+ - Multiple loops  
+
+## Spark Vs Flink 
+
+  - Flink - iterations are executed as a cyclic data flows. Data is kept locally
+  - Spark - Each iteration is a new set of tasks/operators - scheduled and executed
+   - New results go to a new execution process
+   - Slower 
+
+
+# Questions
+ 
+  - When you talk about backpressure with akka streams, how is that managed and caught up with?
+  - When would you use the Akka Streams approach vs the kafka streams approach?
+  - Scaling with Akka Streams?
+  - How do the joins support missing keys? Late/keys
+
+
