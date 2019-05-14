@@ -40,10 +40,45 @@ https://deanwampler.github.io/polyglotprogramming/papers/ExecutiveBriefing-WhatI
     - VC for modesl and code
     - Automated builds, tests, qc, and artifact delievery
     - Launch confurations: "dark launches", A/B and other testing scenarios
-    
-  
+    - Monitoring: Performance overhead
+      - Much slower 
+      - Quality metrics amtch expectations from training?
+    - Auditing 
+      - Which model used to score this record
+      - Which records used to train this model
+      - Who accessed this model and when
+      - Metadata storage 
+   - Indetermancy in to the system
+   
 ## Complete systems for ml/ai
 
+  - Model seving as a service See slide for architecture
+    - Important part:
+       - Isolated components to create training
+       - Isolated component to use the training model at the time of processing
+       - Decouples Ai system
+    - Loss of data service
+  - Embedding learning tool (Tensor flow serving)
+    - Heavy on the communication between tensorflow and models 
+    - Faster on processing because it's a microcluster
+    - Lowest overhead
+    
+## Stuff
+
+  - Kubeflow - K8
+  - SageMaker - for aws users
+  - MLFlow from Spark community
+
+## Auditing 
+ - What you want to track
+ - Kind of model
+ - Parameters and hyper parameters
+ - When trained 
+ - Data used for training 
+ - Quality metrics
+ - Serving metrics 
+ - Provenance of decision to retrain - metrics gathered aove that where used to decide when to retrain
+   
 ## Pragmatic challenges 
 
 ## Reference later 
@@ -51,13 +86,40 @@ https://deanwampler.github.io/polyglotprogramming/papers/ExecutiveBriefing-WhatI
  - Automatic Rule learning?
  - Embedded rules to influence learning
    - Pretrain the model 
-   
+ - 9 ai trends
+ - Paco nathans ai talk data governnence
+ - distil.pub https://distill.pub/
+ - The algorithm
+ - Fiddler - explain what the model is doing
+ 
 ## Questions?
 
  - REPL
  - Testing 
- - How do you store the models?
  - Seperation of data science vs engineering and where does that merge?
- - How do you version the models that you have for new updates?
- - How do you test/debug models in production
  - Integrate legact expert systems and how: Relearning rules?
+ - In the concerns, are you looking at systems that are adapting live or from static models?
+
+ - How do you store the models?
+ - How do you version the models that you have for new updates?
+
+Git repo, database .. although complex parameters are needed?
+Not high volume outputs
+
+
+KubeFlow 
+Has model meta data (awesome!) 
+
+
+ - How do you test/debug models in production
+
+ Auditing 
+ 
+ - How do you manage situations where you may need to reprocess due to bad data?
+ - Stability of the systems?
+ 
+All about data quality
+Models are the problems
+- Quality assurance 
+- This is A HUGE thing to be aware of 
+
