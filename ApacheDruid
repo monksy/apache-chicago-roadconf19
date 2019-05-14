@@ -1,0 +1,14 @@
+# Apache Druid 
+
+Real time databases. 
+
+## What is it?
+
+  - Analytical db that is focused on doing OLAP rather than OTP. 
+  - Querying part of the data lake
+  - Planned queries
+  - Optimizations
+  - Pre optimizations on inserts
+  - Custom frontends
+
+
